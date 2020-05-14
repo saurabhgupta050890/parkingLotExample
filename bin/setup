@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Add script to:
+# * Install dependencies
+# * Build/Compile
+# * Run Test Suit to validate
+#
+# After this is run, bin/parking_lot
+# should Just Work.
+
+# This variable contains absolute path of this `parking_lot` script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+if type -P node > /dev/null
+then
+    cd $DIR/../app
+    npm install
+    npm test
+else
+    echo "Node is not installed"
+fi

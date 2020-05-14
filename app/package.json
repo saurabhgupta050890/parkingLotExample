@@ -1,0 +1,16 @@
+{
+  "name": "parking_lot",
+  "version": "1.0.0",
+  "description": "A sample parking lot application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "Saurabh Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  }
+}
